@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home work</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="/send_form">Form</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Header h1</h1>
+    </header>
+    <section>
+        <h2>Section Header h2</h2>
+        <article>
+            <h2>Header h3</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas inventore pariatur nostrum mollitia distinctio laudantium sed dignissimos veniam dolorem beatae facilis assumenda, explicabo, rem corporis soluta, quis odit, enim in!
+            </p>
+            <aside>
+                aside for article
+            </aside>
+        </article>
+    </section>
+    <section>
+        <h2>Section Header h2</h2>
+        <article>
+            <h2>Header h3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <aside class="">
+            aside for section
+        </aside>
+    </section>
+    <main>
+        <ol>
+            <li>Ol list item 1</li>
+            <li>Ol list item 2</li>
+            <li>Ol list item 3</li>
+            <li>Ol list item 4</li>
+        </ol>
+        <div>
+            <p>New tag for is meter</p>
+            <meter value="10" max="100" low="10" high="60">Low</meter>
+            <meter value="50" max="100" low="10" high="60">Middle</meter>
+            <meter value="100" max="100" low="10" high="60">High</meter>
+        </div>
+        <p>output</p>
+        <form oninput="result.value=(test.value * 2).toFixed(2)">
+            <input type="number" name="test">
+            <output name="result">0</output>
+        </form>
+        <div>
+            <p>Progress bar with html5</p>
+            <progress max="100" value="25">
+            </progress>
+        </div>
+        <ruby>
+            Test text for ruby tag
+            <rp>text</rp><rt>annotation</rt><rp>text</rp>
+        </ruby>
+        <div>
+            <p>Test details and summary tag</p>
+            <details>
+                <summary>Info</summary>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </details>
+        </div>
+        <div>
+            <p>Good tag for semantic (time, address)</p>
+            <time>2018-02-20</time>
+            <br>
+            <address>
+                <hr>
+                Ukraine, Lviv 79000
+                <hr>
+            </address>
+        </div>
+        <div>
+            Abbreviation Blockquote and other<br>
+            <abbr title="Unidentified Flying Object">UFO</abbr>
+            <blockquote>
+                For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+            </blockquote>
+            <em>Emphasized text in tag em</em><br>
+            <i>Just italic</i><br>
+            <strong>Strong text in tag strong important text</strong><br>
+            <b>Just bold</b><br>
+            <code>var a = "Hello World!"; console.log(a); in tag code</code><br>
+            <kbd>Keyboard input (tag kbd)</kbd><br>
+        </div>
+        <div>
+            <pre>
+                The most popular tag for back-end developer =)
+                print_r($array);
+                And use all       of      space and     tab
+
+                or \n
+            </pre>
+        </div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th rowspan="3">Student</th>
+                    <th colspan="6">Class</th>
+                </tr>
+                <tr>
+                    <th colspan="3">Math</th>
+                    <th colspan="3">Language</th>
+                </tr>
+                <tr>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>90</td>
+                    <td>80</td>
+                    <td>85</td>
+                    <td>90</td>
+                    <td>80</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Spark</td>
+                    <td>90</td>
+                    <td>80</td>
+                    <td>85</td>
+                    <td>90</td>
+                    <td>80</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Mark</td>
+                    <td>90</td>
+                    <td>80</td>
+                    <td>85</td>
+                    <td>90</td>
+                    <td>80</td>
+                    <td>85</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <td>Footer</td>
+                <td colspan="3">85</td>
+                <td colspan="3">85</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        Copyright Office <sup>&copy;</sup> H<sub>2</sub>0
+    </footer>
+</body>
+</html>

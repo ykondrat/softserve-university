@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="https://formspree.io/kondratyev.yevhen@gmail.com">
+        <div class="form-group">
+            <label for="user-name">Your Name:</label>
+            <input id="user-name" type="text" placeholder="You Name" name="user-name" required>
+        </div>
+        <div class="form-group">
+            <label>
+                Email:
+                <input type="email" name="user-email" placeholder="Your email address" required>
+            </label>
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="form-group">
+                <label>
+                    Male:
+                    <input type="radio" name="user-gender" value="male" required>
+                </label>
+                <label>
+                    Female:
+                    <input type="radio" name="user-gender" value="female" required>
+                </label>
+                <label>
+                    Other:
+                    <input type="radio" name="user-gender" value="other" required>
+                </label>
+            </div>
+        </div>
+        <div>
+            <label>
+                You favorite language:
+                <select class="" name="user-language">
+                    <option value="JS">JS</option>
+                    <option value="C">C</option>
+                    <option value="Python">Python</option>
+                    <option value="C++">C++</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="Java">Java</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>
+                Check your data?
+                <input type="checkbox" name="user-agree" value="yes">
+            </label>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submot">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
