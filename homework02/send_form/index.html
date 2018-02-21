@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>home work form</title>
 </head>
 <body>
     <nav>
@@ -47,7 +47,7 @@
         </div>
         <div>
             <label>
-                You favorite language:
+                Your favorite programming language:
                 <select class="" name="user-language">
                     <option value="JS">JS</option>
                     <option value="C">C</option>
@@ -60,10 +60,51 @@
         </div>
         <div>
             <label>
+                Your favorite browsers:
+                <select name="browser" multiple>
+                    <option value="Chrome">Chrome</option>
+                    <option value="Mozilla">Mozilla</option>
+                    <option value="Chromium">Chromium</option>
+                    <option value="Edge">Edge</option>
+                    <option value="IE">IE</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Safari">Safari</option>
+                </select>
+            </label>
+            <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+        </div>
+        <div>
+            <p>Which browsers do you use?</p>
+            <div>
+                <label>
+                    Chrome:
+                    <input type="checkbox" name="chrome">
+                </label>
+                <label>
+                    Mozilla:
+                    <input type="checkbox" name="mozilla">
+                </label>
+                <label>
+                    Safari:
+                    <input type="checkbox" name="safari">
+                </label>
+                <label>
+                    IE:
+                    <input type="checkbox" name="ie">
+                </label>
+                <label>
+                    Other:
+                    <input type="checkbox" name="other">
+                </label>
+            </div>
+        </div>
+        <div>
+            <label>
                 Check your data?
                 <input type="checkbox" name="user-agree">
             </label>
         </div>
+
         <div class="form-group">
             <input type="submit" value="Submot">
             <input type="reset" value="Reset">
