@@ -1,0 +1,8 @@
+html, body {
+    height: 100%;
+    background-color: #2b2e3b;
+    color: white;
+}
+.scipts {
+    display: none;
+}

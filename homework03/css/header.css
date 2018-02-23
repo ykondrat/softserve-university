@@ -1,0 +1,71 @@
+
+.logo-img img {
+    width: 40px;
+}
+.nav-btn-container {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.nav-btn {
+    width: 35px;
+    height: 2.5px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+}
+.nav-btn::after,
+.nav-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 2.5px;
+    background-color: #fff;
+    -webkit-transition: top 0.35s, -webkit-transform 0.45s;
+    transition: top 0.35s, -webkit-transform 0.45s;
+    -o-transition: top 0.35s, transform 0.45s;
+    transition: top 0.35s, transform 0.45s;
+    transition: top 0.35s, transform 0.45s, -webkit-transform 0.45s;
+}
+.nav-btn::after {
+    top: 10px;
+    left: 0;
+}
+.nav-btn::before {
+    top: -10px;
+    left: 0;
+}
+.close .nav-btn {
+    background-color: transparent;
+}
+.close .nav-btn::after {
+    top: 0;
+    -webkit-transform: rotateZ(405deg);
+        -ms-transform: rotate(405deg);
+            transform: rotateZ(405deg);
+}
+.close .nav-btn::before {
+    top: 0;
+    -webkit-transform: rotateZ(-405deg);
+        -ms-transform: rotate(-405deg);
+            transform: rotateZ(-405deg);
+}
