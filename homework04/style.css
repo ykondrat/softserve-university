@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+:root {
+    font-size: 12px;
+}
+
+a, abbr, area, address, article, aside, audio, b,
+body, br, blockquote, button, canvas, code, cite, caption, div, dd, dt, dl,
+em, form, footer, fieldset, figure, figcaption, html, h1, h2, h3, h4, h5, h6,
+header, hr, i, img, iframe, input, kbd, li, label, legend, main, nav, ol,
+option, p, pre, select, span, strong, section, small, summary, td, table, th,
+textarea, tr, tfoot, tbody, thead, ul, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+a {
+    color: #000;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active, a:visited {
+    color: inherit;
+}
+b, strong {
+    font-weight: bolder;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    border-style: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+body {
+    background: #9b42f4;
+    background: linear-gradient(to bottom right, #9b42f4, #f441d3);
+    margin-bottom: 20px;
+}
+.page-wrapper {
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.page-wrapper section.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 0 20px;
+}
+abbr[title], acronym[title] {
+    text-decoration: none;
+}
+header {
+    flex-basis: 100%;
+    align-self: center;
+
+}
+header h1 {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-size: 10vmin;
+    -webkit-animation: pulse 1.5s infinite;
+    color: white;
+}
+header h1:before {
+    content: '🔥';
+    padding-right: 5px;
+}
+header h1:after {
+    content: '🔥';
+    padding-left: 5px;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+header h2 {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 6vmin;
+    color: #e8e8e8;
+    text-shadow: 2px 2px #000;
+}
+.summary {
+    flex-basis: 50%;
+    align-self: center;
+    padding: 0 10px;
+}
+.summary p,
+.preamble p {
+    font-family: 'Play', sans-serif;
+    font-size: 2.5vmin;
+    margin: 5px 0;
+    color: #e8e8e8;
+    text-align: justify;
+    line-height: 25px;
+}
+.summary p a {
+    color: white;
+    font-weight: bold;
+}
+.summary p a:hover {
+    border-bottom: 2px dashed white;
+}
+.preamble h3 {
+    font-family: 'Play', sans-serif;
+    font-size: 3vmin;
+    text-shadow: 2px 2px #000;
+    color: white;
+}
+.preamble {
+    flex-basis: 50%;
+    align-self: center;
+    padding: 0 10px;
+}
+.main.supporting {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+footer {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+    order: 1;
+    margin-bottom: 20px;
+}
+footer a {
+    font-family: 'Play', sans-serif;
+    font-size: 4vmin;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px #000;
+    padding: 10px 30px;
+    transition: .3s;
+}
+footer a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+.explanation,
+.participation,
+.benefits {
+    flex-basis: 33%;
+    font-family: 'Play', sans-serif;
+}
+.explanation {
+    order: 3;
+    padding: 10px;
+    font-family: 'Play', sans-serif;
+}
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3 {
+    font-size: 3vmin;
+    text-shadow: 2px 2px #000;
+    color: white;
+}
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {
+    font-size: 2.5vmin;
+    color: #e8e8e8;
+    padding: 10px 0;
+    line-height: 25px;
+    text-align: justify;
+}
+.explanation p a,
+.participation p a,
+.benefits p a,
+.requirements p a {
+    color: white;
+    font-weight: bold;
+}
+.explanation p a:hover,
+.participation p a:hover,
+.benefits p a:hover,
+.requirements p a:hover {
+    border-bottom: 2px dashed white;
+}
+.participation {
+    order: 4;
+    padding: 10px;
+}
+.benefits {
+    order: 2;
+    padding: 10px;
+}
+.requirements {
+    padding: 10px 20px;
+    order: 5;
+    flex-basis: 100%;
+    font-family: 'Play', sans-serif;
+}
+.sidebar {
+    padding: 0 10px;
+}
+.sidebar .wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+.design-selection ,
+.design-archives ,
+.zen-resources  {
+    padding: 10px;
+}
+
+.design-selection ul,
+.design-archives ul,
+.zen-resources  ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+li {
+    font-family: 'Play', sans-serif;
+    font-size: 2vmin;
+    font-weight: bold;
+    color: #e5dee4;
+    padding: 5px 0;
+}
+li a {
+    font-family: 'Play', sans-serif;
+    font-size: 2vmin;
+    font-weight: bold;
+    color: white;;
+}
+.design-selection .select,
+.design-archives .archives,
+.zen-resources .resources {
+    font-family: 'Play', sans-serif;
+    font-size: 4vmin;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+.design-selection .select:after,
+.design-archives .archives:after,
+.zen-resources .resources:after {
+    content: '👆';
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .preamble,
+  .summary,
+  .explanation,
+  .participation,
+  .benefits {
+    flex-basis: 100%;
+  }
+  .requirements {
+      padding: 10px;
+  }
+}
+@media screen and (max-width: 530px) {
+    footer,
+    .sidebar .wrapper {
+        display: block;
+    }
+}

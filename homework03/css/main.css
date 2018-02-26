@@ -3,6 +3,14 @@ html, body {
     background-color: #2b2e3b;
     color: white;
 }
-.scipts {
-    display: none;
+.footer-map {
+	width: 100%;
+	height: 300px;
+}
+.right-social-icons img,
+.footer-icon img {
+    width: 30px;
+}
+.slider-img {
+    width: 100%;
 }
