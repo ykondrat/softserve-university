@@ -17,30 +17,21 @@ do {
     c = parseFloat(prompt('Enter "C":'));
 } while (isNaN(c));
 
-result = quadraticEquation(a, b, c);
-
-if (result.length > 1) {
-    document.write(`<h3>x1 = ${result[0]}<h3>`);
-    document.write(`<h3>x2 = ${result[1]}<h3>`);
-} else {
-    if (typeof result[0] === 'string') {
-        document.write(`<h3>${result[0]}<h3>`);
-    } else {
-        document.write(`<h3>x = ${result[1]}<h3>`);
-    }
-}
+document.write(quadraticEquation(a, b, c));
 
 function quadraticEquation(a, b, c) {
     let d = Math.pow(b, 2) - 4 * a * c;
-    let resultsOfX = new Array();
 
     if (d === 0) {
-        resultsOfX.push(-b / (2 * a));
+        let x = -b / (2 * a);
+
+        return (`<h1>D == 0</h1><h2>Result:</h2><p>x = ${x}</p>`);
     } else if (d > 0) {
-        resultsOfX.push(((-b + Math.sqrt(d)) / (2 * a)));
-        resultsOfX.push(((-b - Math.sqrt(d)) / (2 * a)));
+        let x1 = (-b + Math.sqrt(d)) / (2 * a);
+        let x2 = (-b - Math.sqrt(d)) / (2 * a);
+
+        return (`<h1>D == 0</h1><h2>Result:</h2><p>x1 = ${x1}</p><p>x2 = ${x2}</p>`);
     } else {
-        resultsOfX.push('If D < 0, the equation ax2 + bx + c = 0 has no solution.');
+        return ('D < 0, the equation ax2 + bx + c = 0 has no solution.');
     }
-    return (resultsOfX);
 }
