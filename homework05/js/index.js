@@ -31,7 +31,6 @@ function quadraticEquation(a, b, c) {
         let x2 = (-b - Math.sqrt(d)) / (2 * a);
 
         return (`<h1>D == 0</h1><h2>Result:</h2><p>x1 = ${x1}</p><p>x2 = ${x2}</p>`);
-    } else {
-        return ('D < 0, the equation ax2 + bx + c = 0 has no solution.');
     }
+    return ('D < 0, the equation ax2 + bx + c = 0 has no solution.');
 }

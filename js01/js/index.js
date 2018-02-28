@@ -1,13 +1,18 @@
+function Car(name, color, year, mark) {
+    this.name = name;
+    this.color = color;
+    this.year = year;
+    this.mark = mark;
 
-function sum(a, b) {
-    if (arguments[2]) {
-        return (a + b + arguments[2]);
-    } else {
-        return (a + b);
+    this.sound = function () {
+        return ('Beep Beep');
     }
-
+    this.getName = function () {
+        return (this.name);
+    }
+    return this;
 }
 
-console.log(sum(5, 5));
-console.log(sum(5, 15, 30));
-console.log(sum(5, 5, 30, 30));
+let myCar = new Car ('BMW', 'black', 2010, 'M3');
+
+console.log(myCar.getName() + ' ' + myCar.sound());
