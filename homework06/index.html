@@ -9,8 +9,21 @@
 <body>
     <h1>Fibonacci</h1>
     <div>
-        <input class="index" type="text" name="" value="" placeholder="Enter fibonacci index">
-        <input class="submit" type="submit" name="" value="Submit">
+        <div>
+            <label>
+                Choose method
+                <select class="method" name="method">
+                    <option value="fibonacciRecursive">Recursive</option>
+                    <option value="fibonacciIterative">Iterative</option>
+                </select>
+            </label>
+            <hr>
+        </div>
+        <div>
+            <input class="index" type="text" name="" value="" placeholder="Enter fibonacci index">
+            <input class="submit" type="submit" name="" value="Submit">
+        </div>
+        <hr>
     </div>
     <div class="result">
 
