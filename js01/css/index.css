@@ -1,0 +1,9 @@
+.tab-btn.active {
+    font-weight: bold;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}

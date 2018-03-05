@@ -1,18 +1,12 @@
-function Car(name, color, year, mark) {
-    this.name = name;
-    this.color = color;
-    this.year = year;
-    this.mark = mark;
+const buttons = document.querySelectorAll('.tab-btn');
+const allToggle = document.querySelectorAll('.tab-content, .tab-btn');
 
-    this.sound = function () {
-        return ('Beep Beep');
-    }
-    this.getName = function () {
-        return (this.name);
-    }
-    return this;
+function buttonsAction(event) {
+    let tabNumber = event.target.dataset.tab;
+
+    allToggle.forEach( element => {
+        element.dataset.tab === tabNumber ? element.classList.add('active') : element.classList.remove('active');
+    });
 }
 
-let myCar = new Car ('BMW', 'black', 2010, 'M3');
-
-console.log(myCar.getName() + ' ' + myCar.sound());
+buttons.forEach(element => element.addEventListener('click', buttonsAction));
