@@ -63,8 +63,6 @@ function calculator(arr, operator) {
             result = parseFloat(arr[0]) % parseFloat(arr[1])
             break;
     }
-    if (!isFinite(result) || isNaN(result)) {
-        result = 0;
-    }
+    (!isFinite(result) || isNaN(result)) ? result = 0 : null;
     return (result);
 }
